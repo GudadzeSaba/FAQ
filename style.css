@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
+}
+.box {
+  display: none;
+}
+.container {
+  background-color: white;
+  width: 327px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  border-radius: 15px;
+}
+.womanImgAndroid {
+  position: absolute;
+  width: 236px;
+  height: 136px;
+  top: -5rem;
+}
+.womanImgDesktop {
+  display: none;
+}
+.shadowAndroid {
+  width: 200px;
+}
+.shadowDesktop {
+  display: none;
+}
+.faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+button {
+  border: none;
+  background-color: white;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+hr {
+  width: 18.5rem;
+  background-color: #e8e8ea;
+  border: none;
+  height: 0.1rem;
+}
+.hidden {
+  display: none;
+}
+
+p {
+  width: 280px;
+}
+.answered {
+  font-weight: 400;
+  color: #787887;
+  font-size: 12px;
+  line-height: 18px;
+}
+.question {
+  color: #4b4c5f;
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 920px;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-right: 5rem;
+    height: 30rem;
+    padding-top: 7.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  h1 {
+    position: absolute;
+    left: 58.7%;
+    top: 10%;
+  }
+  .womanImgAndroid {
+    display: none;
+  }
+  .womanImgDesktop {
+    display: block;
+    position: absolute;
+    left: -8.3%;
+    top: 8%;
+  }
+  .question:hover {
+    color: #f47b56;
+    cursor: pointer;
+  }
+  button {
+    cursor: pointer;
+  }
+  .shadowAndroid {
+    display: none;
+  }
+  .shadowDesktop {
+    display: block;
+    width: 40rem;
+    position: absolute;
+    left: -26.5%;
+    top: -20%;
+  }
+  .box {
+    display: block;
+    position: absolute;
+    transform: translate(-50 -50);
+    z-index: 1;
+    overflow: visible;
+    top: 37%;
+    left: -10.5%;
+  }
+}
